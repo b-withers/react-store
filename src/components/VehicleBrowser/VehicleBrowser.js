@@ -7,7 +7,7 @@ class VehicleBrowser extends React.Component {
 	}
 
 	render(){
-		return(<h2>Vehicle Browser</h2>);
+		return(<h2 className="vb">Vehicle Browser</h2>);
 	}
 }
 

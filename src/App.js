@@ -4,6 +4,7 @@ import Axios from 'axios';
 import TopNav from './components/TopNav';
 import Home from './components/Home'
 import Footer from './components/Footer';
+import { BrowserRouter, Route } from "react-router-dom";
 
 class App extends Component {
 
@@ -23,11 +24,15 @@ componentDidMount(){
 
 render(){    
 	return(
+		<BrowserRouter>
 		<div className="App">
 			<TopNav />
-			<Home />
+			<div className="ContentArea">
+			<Route exact path='/' component={Home} />
+			</div>
 			<Footer />
 		</div>
+		</BrowserRouter>
 	);
 }
 
