@@ -12,7 +12,7 @@ class SiteCarousel extends React.Component {
 		return(
 			<Container>
 			<Row>
-          <Col sm="12" lg="4">.col</Col>
+          <Col sm="12" lg="4" className="box"><p style={{color: 'purple', fontSize: "2rem"}}>.col</p></Col>
           <Col sm="12" lg="4">.col</Col>
           <Col sdm="12" lg="4">.col</Col>
 					</Row>
